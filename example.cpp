@@ -7,8 +7,8 @@ using namespace std;
 using namespace cv;
 
 /// Global Variables
-int DELAY_CAPTION = 1500;
-int DELAY_BLUR = 100;
+int DELAY_CAPTION = 15000;
+int DELAY_BLUR = 1000;
 int MAX_KERNEL_LENGTH = 31;
 
 Mat src; Mat dst;
