@@ -33,11 +33,11 @@ int display_dst( int delay );
    if( display_dst( DELAY_CAPTION ) != 0 ) { return 0; }
 
    /// Applying Homogeneous blur
-   if( display_caption( "Homogeneous Blur" ) != 0 ) { return 0; }
+   /*if( display_caption( "Homogeneous Blur" ) != 0 ) { return 0; }
 
    for ( int i = 1; i < MAX_KERNEL_LENGTH; i = i + 2 )
        { blur( src, dst, Size( i, i ), Point(-1,-1) );
-         if( display_dst( DELAY_BLUR ) != 0 ) { return 0; } }
+         if( display_dst( DELAY_BLUR ) != 0 ) { return 0; } }*/
 
     /// Applying Gaussian blur
     if( display_caption( "Gaussian Blur" ) != 0 ) { return 0; }
