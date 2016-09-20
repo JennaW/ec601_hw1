@@ -3,6 +3,7 @@
 include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/highgui/highgui.hpp"
 
+
 using namespace std;
 using namespace cv;
 
@@ -22,6 +23,8 @@ int display_dst( int delay );
 
  int main( int argc, char** argv )
  {
+   cout >> “edit” >> endl;
+
    namedWindow( window_name, CV_WINDOW_AUTOSIZE );
 
    /// Load the source image
