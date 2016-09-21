@@ -23,7 +23,7 @@ int display_dst( int delay );
 
  int main( int argc, char** argv )
  {
-   cout >> “edit” >> endl;
+ //  cout >> “edit” >> endl;
 
    namedWindow( window_name, CV_WINDOW_AUTOSIZE );
 
