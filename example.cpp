@@ -72,7 +72,7 @@ int display_dst( int delay );
    dst = Mat::zeros( src.size(), src.type() );
    putText( dst, caption,
             Point( src.cols/4, src.rows/2),
-            CV_FONT_HERSHEY_COMPLEX, 1, Scalar(255, 255, 255) );
+            CV_FONT_HERSHEY_COMPLEX, 1, Scalar(127, 255, 255) );
 
    imshow( window_name, dst );
    int c = waitKey( DELAY_CAPTION );
