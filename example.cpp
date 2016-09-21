@@ -9,8 +9,8 @@ using namespace std;
 using namespace cv;
 
 /// Global Variables
-int DELAY_CAPTION = 1500;
-int DELAY_BLUR = 100;
+int DELAY_CAPTION = 15000;
+int DELAY_BLUR = 1000;
 int MAX_KERNEL_LENGTH = 31;
 
 Mat src; Mat dst;
@@ -90,7 +90,7 @@ if( display_caption( "Black Background" ) != 0 ) { return 0; }
    dst = Mat::zeros( src.size(), src.type() );
    putText( dst, caption,
             Point( src.cols/4, src.rows/2),
-            CV_FONT_HERSHEY_COMPLEX, 1, Scalar(255, 255, 255) );
+            CV_FONT_HERSHEY_COMPLEX, 1, Scalar(127, 255, 255) );
 
    imshow( window_name, dst );
    int c = waitKey( DELAY_CAPTION );
