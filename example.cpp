@@ -2,7 +2,8 @@
 
 include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/highgui/highgui.hpp"
-
+#include <opencv2/opencv.hpp>
+#include <iostream>
 
 using namespace std;
 using namespace cv;
@@ -34,6 +35,20 @@ int display_dst( int delay );
 
    dst = src.clone();
    if( display_dst( DELAY_CAPTION ) != 0 ) { return 0; }
+
+// Applying black background (Change the background from white to black)
+if( display_caption( "Black Background" ) != 0 ) { return 0; }
+
+    for( int x = 0; x < src.rows; x++ ) {
+      for( int y = 0; y < src.cols; y++ ) {
+          if ( src.at<Vec3b>(x, y) == Vec3b(255,255,255) ) {
+            src.at<Vec3b>(x, y)[0] = 0;
+            src.at<Vec3b>(x, y)[1] = 0;
+            src.at<Vec3b>(x, y)[2] = 0;
+          }
+        }
+    }
+
 
    /// Applying Homogeneous blur
    if( display_caption( "Homogeneous Blur" ) != 0 ) { return 0; }
