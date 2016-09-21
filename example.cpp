@@ -1,4 +1,4 @@
-//http://docs.opencv.org/2.4/doc/tutorials/imgproc/gausian_median_blur_bilateral_filter/gausian_median_blur_bilateral_filter.html#smoothing
+﻿//http://docs.opencv.org/2.4/doc/tutorials/imgproc/gausian_median_blur_bilateral_filter/gausian_median_blur_bilateral_filter.html#smoothing
 
 include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/highgui/highgui.hpp"
@@ -29,7 +29,7 @@ int display_dst( int delay );
    namedWindow( window_name, CV_WINDOW_AUTOSIZE );
 
    /// Load the source image
-   src = imread( "../images/lena.jpg", 1 );
+   src = imread( "svetlana.jpg", 1 );
 
    if( display_caption( "Original Image" ) != 0 ) { return 0; }
 
